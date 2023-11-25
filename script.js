@@ -41,3 +41,24 @@ function play (playerSelection, computerSelection) {
         }
     }
 }
+
+function game () {
+    let input;
+    for (let i = 0; i < 5; i++) {
+        while (true) {
+            input = prompt("What will your choise be? Rock, Paper or Scissors");
+            if (validateInput(input)) {
+                break;
+            }
+        }
+        console.log(play(input, getComputerChoice()));
+    }
+}
+
+function validateInput (input) {
+    if (input == 'rock' || input == 'paper' || input == 'scissors') {
+        return true;
+    } else { return false; }
+}
+
+game();
