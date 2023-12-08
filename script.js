@@ -1,3 +1,8 @@
+document.querySelector("#rock").addEventListener("click", ()=>{play("rock", getComputerChoice())});
+
+document.querySelector("#paper").addEventListener("click", ()=>{play("paper", getComputerChoice())});
+
+document.querySelector("#scissors").addEventListener("click", ()=>{play("scissors", getComputerChoice())})
 function getComputerChoice () {
     randomN = Math.floor(Math.random() * 3);
     switch (randomN) {
@@ -12,6 +17,7 @@ function getComputerChoice () {
 
 function play (playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase();
+    console.log(computerSelection + "  +  " + playerSelection)
     if (playerSelection == "rock") {
         switch (computerSelection) {
             case "Rock":
@@ -40,19 +46,11 @@ function play (playerSelection, computerSelection) {
                 return "Tie! Both chose Scissors";
         }
     }
+    console.log(computerSelection + "  +  " + playerSelection)
 }
 
 function game () {
-    let input;
-    for (let i = 0; i < 5; i++) {
-        while (true) {
-            input = prompt("What will your choise be? Rock, Paper or Scissors");
-            if (validateInput(input)) {
-                break;
-            }
-        }
-        console.log(play(input, getComputerChoice()));
-    }
+    
 }
 
 function validateInput (input) {
