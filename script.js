@@ -17,7 +17,6 @@ function getComputerChoice () {
 
 function play (playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase();
-    console.log(computerSelection + "  +  " + playerSelection)
     if (playerSelection == "rock") {
         switch (computerSelection) {
             case "Rock":
