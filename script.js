@@ -20,32 +20,40 @@ function play (playerSelection, computerSelection) {
     if (playerSelection == "rock") {
         switch (computerSelection) {
             case "Rock":
-                return "Tie! Both chose Rock";
+                document.getElementById("result").innerText = "Tie! Both chose Rock";
+                break;
             case "Paper":
-                return "You loose! Paper beats Rock";
+                document.getElementById("result").innerText = "You loose! Paper beats Rock";
+                break;
             case "Scissors":
-                return "You win! Rock beats Scissors";
+                document.getElementById("result").innerText = "You win! Rock beats Scissors";
+                break;
         }
     } else if (playerSelection == "paper") {
         switch (computerSelection) {
             case "Rock":
-                return "You Win! Paper beats Rock";
+                document.getElementById("result").innerText = "You Win! Paper beats Rock";
+                break;
             case "Paper":
-                return "Tie! Both choose Paper";
+                document.getElementById("result").innerText = "Tie! Both choose Paper";
+                break;
             case "Scissors":
-                return "You loose! Scissors beats Paper";
+                document.getElementById("result").innerText = "You loose! Scissors beats Paper";
+                break;
         }
     } else if (playerSelection = "scissors") {
         switch (computerSelection) {
             case "Rock":
-                return "You loose! Rock beats Scissors";
+                document.getElementById("result").innerText = "You loose! Rock beats Scissors";
+                break;
             case "Paper":
-                return "You Win! Scissors beats Paper";
+                document.getElementById("result").innerText = "You Win! Scissors beats Paper";
+                break;
             case "Scissors":
-                return "Tie! Both chose Scissors";
+                document.getElementById("result").innerText = "Tie! Both chose Scissors";
+                break;
         }
     }
-    console.log(computerSelection + "  +  " + playerSelection)
 }
 
 function game () {
