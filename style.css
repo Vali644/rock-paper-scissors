@@ -1,4 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    border: solid 1px purple;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
 }
