@@ -79,9 +79,9 @@ function play (playerSelection, computerSelection) {
     document.querySelector("#player-score").innerText = playerScore;
     document.querySelector("#computer-score").innerText = computerScore;
     if (playerScore == 5) {
-        document.getElementById("result").innerText = "You won the match!! 😀";
+        document.getElementById("result").innerText = "You won the game!! 😀";
     } else if (computerScore == 5) {
-        document.getElementById("result").innerText = "You lost the match!! ☹️";
+        document.getElementById("result").innerText = "The computer won the game!! ☹️";
     }
 }
 

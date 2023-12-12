@@ -4,8 +4,30 @@
     border: solid 1px purple;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
 #container {
     display: flex;
     flex-direction: column;
     width: 800px;
+    height: 600px
+}
+
+#top {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+}
+
+#score-container {
+    display: flex;
+    justify-content: center;
+}
+
+#bottom {
+    display: flex;
+    flex-grow: 1;
 }
