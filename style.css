@@ -28,7 +28,6 @@ body {
     display: flex;
     justify-content: center;
     flex-grow: 4;
-    
 }
 
 #bottom {
@@ -56,11 +55,32 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 20px
 }
 
 #player-container div,
 #computer-container div {
     display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+#player-score,
+#computer-score {
+    width: 150px;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+#player-name,
+#computer-name,
+#player-choice,
+#computer-choice {
+    width: 300px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
