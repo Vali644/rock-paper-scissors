@@ -21,6 +21,12 @@ let playerScore = 0;
 let computerScore = 0;
 
 function play (playerSelection, computerSelection) {
+    if (playerScore == 5 || computerScore == 5) {
+        computerScore = 0;
+        playerScore = 0;
+        document.querySelector("#playerScore").innerText = playerScore;
+        document.querySelector("#computerScore").innerText = computerScore;
+    }
     playerSelection = playerSelection.toLowerCase();
     if (playerSelection == "rock") {
         switch (computerSelection) {
@@ -68,6 +74,11 @@ function play (playerSelection, computerSelection) {
     // left to implement a 5 point score cap
     document.querySelector("#playerScore").innerText = playerScore;
     document.querySelector("#computerScore").innerText = computerScore;
+    if (playerScore == 5) {
+        document.getElementById("result").innerText = "You won the match!! 😀";
+    } else if (computerScore == 5) {
+        document.getElementById("result").innerText = "You lost the match!! ☹️";
+    }
 }
 
 function game () {
